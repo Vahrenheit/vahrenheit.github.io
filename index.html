@@ -1,0 +1,117 @@
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+</style>
+<body>
+<div class="w3.container"><img src="banner.jpg" width="2000" height="400">
+
+
+</div>
+
+<div class="w3-bar w3-light-blue">
+	<button class="w3-bar-item w3-button" onclick="openKota('Home')">Home</button>
+	<button class="w3-bar-item w3-button" onclick="openKota('Biola')">Biola</button>
+	<button class="w3-bar-item w3-button" onclick="openKota('Gitar')">Gitar</button>
+	<button class="w3-bar-item w3-button" onclick="openKota('Saxophone')">Saxophone</button>
+	<button class="w3-bar-item w3-button" onclick="openKota('Piano')">Piano</button>
+
+			
+	<div class="w3-dropdown-hover">
+		<button class="w3-button">Created by</button>
+		<div class="w3-dropdown-content w3-bar-block w3-card-8">
+		<button class="w3-bar-item w3-button" onclick="openKota('Nama')">Valdi Rizki</button>
+	<button class="w3-bar-item w3-button" onclick="openKota('NIM')">10122498</button>
+	<button class="w3-bar-item w3-button" onclick="openKota('Kelas')">IF3</button>
+
+</div>
+</div>
+
+	
+	<div id="Home" class="w3-container kota" style="display:block">
+		<center>
+		<h1>Selamat Datang</h1>
+		<hr>
+		<h1>Jenis Alat Musik</h1>
+		</div> </center>
+	
+		
+	<div id="Biola" class="w3-container kota w3-animate-opacity" style="display:none">
+		<center>
+		<h1>Biola</h1>
+		 Biola adalah sebuah alat musik dawai yang dimainkan dengan cara digesek.
+		Biola memiliki empat senar (G-D-A-E) yang disetel berbeda satu sama lain dengan interval sempurna kelima.
+		Nada yang paling rendah adalah G.
+		Di antara keluarga biola, yaitu dengan biola alto, cello dan double bass atau kontra bass, biola memiliki nada yang tertinggi.
+		Alat musik dawai yang lainnya, bas, secara teknis masuk ke dalam keluarga viol.
+		Kertas musik untuk biola hampir selalu menggunakan atau ditulis pada kunci G.
+		<hr>
+		<img src="biola.jpg">
+		</center>
+		</div>
+		
+	<div id="Piano" class="w3-container kota w3-animate-zoom" style="display:none">
+		<center>
+		<h1>Piano</h1>
+		 Piano (yang juga disebut pianoforte) adalah alat musik tuts yang diklasifikasikan sebagai instrumen dawai dan perkusi yang dimainkan dengan menekan tuts-tuts pada papan piano
+Setiap tuts tersambung ke palu yang ada di dalam piano dan menekan senar di dalamnya, sehingga menghasilkan bunyi. Setiap senar memiliki panjang yang berbeda dan menghasilkan bunyi yang berbeda pula.
+Piano adalah alat musik yang dimainkan dengan jari-jemari tangan. Pemain piano disebut pianis.
+Pada saat awal-awal diciptakan, suara piano tidak sekeras piano abad XX-an, seperti piano yang dibuat oleh Bartolomeo Cristofori (1655 – 1731) buatan 1720. Pasalnya, tegangan senar piano kala itu tidak sekuat sekarang
+Kini piano itu dipajang di Metropolitan Museum of Art di New York.
+Meskipun siapa penemu pertama piano, yang awalnya dijuluki gravecembalo col piano e forte (harpsichord dengan papan tuts lembut dan bersuara keras)
+ masih menjadi perdebatan, banyak orang mengakui, Bartolomeo Cristofori sebagai penciptanya. Piano juga bukan alat musik pertama yang menggunakan papan tuts dan bekerja dengan dipukul
+ Alat musik berprinsip kerja mirip piano telah ada sejak 1440.
+		<hr>
+		<img src="piano.png" width="900" height="1200">
+		</center>
+		</div>
+	
+	<div id="Gitar" class="w3-container kota w3-animate-zoom" style="display:none">
+		<center>
+		<h1>Gitar</h1>
+		 Alat musik Gitar adalah salah satu jenis alat musik dawai. Gitar juga memiliki pengertian lain, yaitu merupakan salah satu alat musik yang dimainkan dengan cara dipetik.
+		 Biasanya alat musik satu ini dimainkan atau dipetik menggunakan jari atau bisa juga dengan plektrum. 
+		Secara umum alat musik dawai ini tersusun atas sebuah bagian yang terdiri dari leher padat. Leher pada gitar lah yang dijadikan tempat senar atau nilon yang berjumlah enam dijajarkan.
+		Gitar seiring dengan perkembangan zaman mengalami modifikasi pada setiap bagian nya. Mulai dari bentuk alat dan juga teknologi yang dipakai.
+		<hr>
+		<img src="gitar.jpg" width="900" height="1200">
+		</center>
+		</div>
+	
+	<div id="Saxophone" class="w3-container kota w3-animate-opacity" style="display:none">
+		<center>
+		<h1>Saxophone</h1>
+		 Saxophone (sering disebut dengan nama Sax) adalah alat musik tiup kayu
+		 walaupun bahan dasar pembuatan alat musik itu sendiri adalah berbahan logam.
+		 Disebut alat musik tiup kayu karena sumber bunyi alat musik yang sexy 
+		 ini adalah dari sebuah bambu tipis dan panjang yang ditempatkan pada bagian 
+		 bawah mouthpiece (bagian untuk meniup sax) yang disebut reed. Reed ini dibedakan menjadi dua jenis,
+		 yaitu single reed yang digunakan pada alat musik ini 
+		 dan jenis double reed yang pada umumnya digunakan untuk alat musik basoon atau oboe.
+		<hr>
+		<img src="saxophone.jpg" width="900" height="1200">
+		</center>
+		</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<script>
+function openKota(namaKota) {
+ var i;
+ var x = document.getElementsByClassName("kota");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none"; 
+ }
+ document.getElementById(namaKota).style.display = "block"; 
+}
+</script>
